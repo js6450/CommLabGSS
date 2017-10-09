@@ -1,6 +1,5 @@
 var imgValue = "";
 var autoErase = false;
-var mult = true;
 
 function erase(erase){
 	if(erase.value === "off"){

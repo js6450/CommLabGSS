@@ -20,7 +20,7 @@ window.onload = function(){
 		div.style.left = Math.random() * window.innerWidth + "px";
 		div.style.top = - Math.random() * 100 - 50 + "px";
 
-		document.body.appendChild(div);
+		document.body.append(div);
 	}
 }
 
