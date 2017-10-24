@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Sound Visualization</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="visuals">
+		<div id="otherCircles"></div>
+		<div id="spinCircle"></div>
+	</div>
+	<div id="controls">
+		<div onclick="startBGM()" id="startCircle"></div>
+		<div onclick="volumeUp()" id="volUp"></div>
+		<div onclick="volumeDown()" id="volDown"></div>
+	</div>
+	<audio oncanplay="setNumbers()" ontimeupdate="addCircles()" onended="disappear()" id="bgm">
+		<source src="assets/bgm.mp3">
+	</audio>
+</body>
+<script defer src="js/script.js" type="text/javascript"></script>
+</html>
