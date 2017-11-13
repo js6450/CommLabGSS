@@ -1,0 +1,46 @@
+html, body{
+	height: 100%;
+	overflow: hidden;
+	margin: 0px;
+
+	font-family: 'Helvetica',  sans-serif;
+}
+
+.grid-vid-row{
+	height: 50%;
+}
+
+.grid-vid-item{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+/*
+CSS filter property
+https://www.w3schools.com/cssref/css3_pr_filter.asp
+
+CSS filter demo
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter&preval=none
+*/
+
+.grid-vid{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(100%);
+	transition: filter 2s;
+}
+
+.grid-vid:hover{
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+
+@keyframes changeColor{
+	from{
+		filter: hue-rotate(0deg);
+	}
+	to{
+		filter: hue-rotate(360deg);
+	}
+}

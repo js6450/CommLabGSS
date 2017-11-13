@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="full-page-vid">
+	<video ontimeupdate="checkTime(this)" id="full-page" autoplay loop>
+		<source src="assets/video/all.mp4" type="video/mp4">
+	</video>
+</div>
+<div id="options">
+	<div onclick="changeVideo(0)" id="opt1" class="options-item">
+		<p>Piano Solo</p>
+	</div>
+	<div onclick="changeVideo(1)" id="opt2" class="options-item">
+		<p>Piano Duo</p>
+	</div>
+	<div onclick="changeVideo(2)" id="opt3" class="options-item">
+		<p>Guitar</p>
+	</div>
+	<div onclick="changeVideo(3)" id="opt4" class="options-item">
+		<p>Drum</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
